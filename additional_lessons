@@ -1,0 +1,26 @@
+# to print multi line codes, you need to use 3 quotes(single or multiple) at the beginning and end of the string
+message = """Zidane's World was a good
+cartoon in the 2000s"""
+print(message)
+
+# you can escape a quote error with a \
+mess = 'bobby\'s world'
+print(f"\n{mess}")
+print("__________________")
+# Use len function to know the number of characters in a string and access them individually
+print(len(mess))
+# next code will slice part of the mess code and print the first 3 letters. leaving off the starting index auto starts at beginning, same with end 
+print(mess[0:3])
+#  can count the numbers of a characters in a string using the count method
+print(mess.count('b')) 
+# can also find character or string using the find method. It will tell us where it starts from
+print(mess.find('wor'))
+print("-----------------------------")
+# you can also replace items in a string using the replace function
+new_mess = mess.replace('world', 'Universe')
+print(new_mess)
+print('---------------------------')
+# to get a list of methods and their arguments use just str for general or .() for specific
+# print(help(str))
+# print(help(str.find))
+# to turn all data in list to lower case, use... usernames = [i.lower() for i in usernames] doesnt eork for dic tho
