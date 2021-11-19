@@ -76,4 +76,3 @@ map[pos1][pos2] = "X"
 
 # 🚨 Don't change the code below 👇
 print(f"{row1}\n{row2}\n{row3}")
-
