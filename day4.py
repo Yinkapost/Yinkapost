@@ -48,5 +48,32 @@ vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
  
 dirty_dozen = [fruits, vegetables]
  
-print(dirty_dozen[1][3])
+dirty_dozen[1][3] = "grata"
+print(dirty_dozen)
+
+# ass: a program that allows you to mark a square on the map using a two-digit system. The first digit is the vertical column number and the second digit is the horizontal row number
+# 🚨 Don't change the code below 👇
+row1 = ["⬜️","⬜️","⬜️"]
+row2 = ["⬜️","⬜️","⬜️"]
+row3 = ["⬜️","⬜️","⬜️"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do you want to put the treasure? ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this row 👇
+pos1 = int(position[0]) - 1
+pos2 = int(position[1]) - 1
+map[pos1][pos2] = "X"
+
+# map[position_string[0] - 1],[position_string[1] - 1] = "x"
+
+
+
+
+
+#Write your code above this row 👆
+
+# 🚨 Don't change the code below 👇
+print(f"{row1}\n{row2}\n{row3}")
 
